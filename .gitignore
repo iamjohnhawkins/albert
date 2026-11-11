@@ -1,0 +1,59 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# --- Tooling caches ---
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# mutmut
+.mutmut-cache
+mutants/
+html/
+
+# --- Local Docker / Neo4j data volumes ---
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+neo4j/plugins/
+data/neo4j/
+
+# --- Eval run outputs (golden dataset itself IS committed) ---
+eval-runs/
+reports/
+
+# --- IDE ---
+# .idea/ project config is committed; JetBrains' own .idea/.gitignore covers workspace files
+out/
+.vscode/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
