@@ -73,7 +73,21 @@ Module boundaries, in pipeline order: `ingest` → `extract` → `map` → `chec
 7. Review screen for low-confidence items.
 8. Varied layouts, then scanned PDFs.
 
+## Agent skills
+
+### Issue tracker
+
+Issues and PRDs live in Jira project KAN at clogweeny.atlassian.net, accessed via the Atlassian MCP server (`.mcp.json`). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Jira labels using the default names (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
 ## Open questions
 
 - Token budget (OpenAI and Claude) per week: not decided yet. Keep usage visible in logs.
-- GitHub repo and Actions for CI: assumed, not set up yet.
+- GitHub Actions for CI: assumed, not set up yet. (GitHub repo is set up: `iamjohnhawkins/albert`.)
