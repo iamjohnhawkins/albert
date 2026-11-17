@@ -76,4 +76,4 @@ Module boundaries, in pipeline order: `ingest` → `extract` → `map` → `chec
 ## Open questions
 
 - Token budget (OpenAI and Codex) per week: not decided yet. Keep usage visible in logs.
-- GitHub repo and Actions for CI: assumed, not set up yet.
+- GitHub repo (`iamjohnhawkins/albert`) and GitHub Actions CI are set up: ruff, mypy strict and pytest run on every push and pull request (KAN-5). Further gates are added as they become relevant.

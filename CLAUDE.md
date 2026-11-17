@@ -90,4 +90,4 @@ Single-context: one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/age
 ## Open questions
 
 - Token budget (OpenAI and Claude) per week: not decided yet. Keep usage visible in logs.
-- GitHub Actions for CI: assumed, not set up yet. (GitHub repo is set up: `iamjohnhawkins/albert`.)
+- GitHub repo (`iamjohnhawkins/albert`) and GitHub Actions CI are set up: ruff, mypy strict and pytest run on every push and pull request (KAN-5). Further gates are added as they become relevant.
